@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Online Car Wash</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body style="background-color:DodgerBlue;">
+    <header>
+        <h1>Our Services </h1>
+    </header>
+
+    <section>
+        <p>Choose from our variety of car wash services:</p>
+        <style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+        <table style="width:100%">
+  <tr>
+    <th>Car type</th>
+    <th>price</th>
+  </tr>
+  <tr>
+    <td>saloon car</td>
+    <td>2500</td>
+  </tr>
+  <tr>
+    <td>Suv car</td>
+    <td>3700</td>
+  </tr>
+  <tr>
+      <td>Bus</td>
+      <td>5000</td>
+  <tr>
+      <td>Lorry</td>
+      <td>6000</td>
+  </tr>
+  <tr>
+      <td>trailer</td>
+      <td>7000</td>
+  </tr>
+  
+</table>
+    </section>
+
+    <section>
+        <h2>Book an Appointment</h2>
+       	<form action="/submit_registration" method="post">
+		<label for="name">Name:</label><br>
+		<input type="text" id="name" name="name" required><br>
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email" required><br>
+        <label for="location">Location</label><br> 
+        <input type="Location" id="location" name="Loction" required><br>
+       <label for="service">Service:</label><br>
+       <select id="service" name="service" required>
+                <option value="saloon car">saloon car</option>
+                <option value="suv car">suv car</option>
+                <option value="bus">bus</option>
+                <option value="Lorry">Lorry</option>
+                
+            </select><br>
+
+            <label for="date">Appointment Date:</label><br>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="time">Appointment Time:</label><br>
+            <input type="time" id="time" name="time" required><br>
+
+            <input type="submit" value="Book Now"></button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Online Car Wash. All rights reserved.</p>
+    </footer>
+</body>
+</html>
