@@ -1,7 +1,7 @@
 import smtplib
 import requests
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 
 load_dotenv()
 
@@ -10,7 +10,7 @@ with smtplib.SMTP('smtp.gmail.com') as connection: #opening connection to smtp.g
     print('Encrypting Connection')
     connection.starttls() #TLS Encryption Security to gmail
     print('Logging in to:', EMAIL)
-    connection.login(user=EMAIL, password='iybs sdgk ekyz kldx') #Log in to Gmail using the App Key
+    connection.login(user=EMAIL, password='') #Log in to Gmail using the App Key
     print('Sending Email to:',EMAIL, 'from:', EMAIL)
     connection.sendmail(
         from_addr=EMAIL,
